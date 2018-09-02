@@ -108,14 +108,14 @@ is the best place to stay active with the forever growing community.
 
 ### Links
 
-Website
-https://amity.netlify.com/
+**Website**
+https://amitycoin.tk/
 
-Paper Wallet 1
-https://amitycoin.netlify.com/
+**Paper Wallet**
+https://wallet.amitycoin.tk/ 
 
-Paper Wallet 2 / WatterWallet
-https://watt3r.github.io/AmityCoin/
+**Watter Wallet**
+https://paper.amitycoin.tk/
 
 *Xandars block explorer and web wallet to come*
 
@@ -128,8 +128,6 @@ Our Discord server will be the best place for you to contact as we try and stay 
 
 **GitHub** - https://github.com/Amitycoin
 Our GitHub may currently be still under review, we have spoke to GitHub themselves and they're lifting the flag on my account. This is where all future repos will be held for Amitycoin.
-
-
 
 ![alt text](https://github.com/Amity-Core/docs/blob/master/images/200x200.png "Our Fancy Logo")
 

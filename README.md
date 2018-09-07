@@ -2,6 +2,12 @@
 
 ![alt text](https://github.com/Amity-Core/docs/blob/master/images/100x100.png "Coin Logo")
 
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/AmityCoin-not%2520launched-red.png)
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/AmityCoin-passing-blue.png)
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/AmitySite-beta-yellow.png)
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/PaperWallet-active-brightgreen.png)
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/WatterWallet-active-brightgreen.png)
+
 ***
 
 | COIN | INFORMATION |

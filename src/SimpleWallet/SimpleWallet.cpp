@@ -995,7 +995,9 @@ bool simple_wallet::new_wallet(const std::string &wallet_file, const std::string
   try {
     m_initResultPromise.reset(new std::promise<std::error_code>());
     std::future<std::error_code> f_initError = m_initResultPromise->get_future();
-    m_wallet->initAndGenerateDeterministic(password);
+    // m_wallet->initAndGenerate(password);
+    // Create deterministic wallets by default
+    m_wallet->initAndGenerate(password);
     auto initError = f_initError.get();
     m_initResultPromise.reset(nullptr);
     if (initError) {

@@ -96,7 +96,7 @@ void wallet_rpc_server::processRequest(const CryptoNote::HttpRequest& request, C
       { "get_payments", makeMemberMethod(&wallet_rpc_server::on_get_payments) },
       { "get_transfers", makeMemberMethod(&wallet_rpc_server::on_get_transfers) },
       { "get_height", makeMemberMethod(&wallet_rpc_server::on_get_height) },
-	        { "get_address", makeMemberMethod(&wallet_rpc_server::on_get_address) },
+	  { "get_address", makeMemberMethod(&wallet_rpc_server::on_get_address) },
       { "query_key", makeMemberMethod(&wallet_rpc_server::on_query_key) },
       { "reset", makeMemberMethod(&wallet_rpc_server::on_reset) }
     };
@@ -277,6 +277,11 @@ bool wallet_rpc_server::on_get_height(const wallet_rpc::COMMAND_RPC_GET_HEIGHT::
   return true;
 }
 
+ 
+bool wallet_rpc_server::on_get_address(const wallet_rpc::COMMAND_RPC_GET_ADDRESS::request& req, wallet_rpc::COMMAND_RPC_GET_ADDRESS::response& res) {
+  res.address = m_wallet.getAddress();
+  return true;
+}
  
 bool wallet_rpc_server::on_query_key(const wallet_rpc::COMMAND_RPC_QUERY_KEY::request& req, wallet_rpc::COMMAND_RPC_QUERY_KEY::response& res) {
   if (req.key_type.compare("mnemonic") == 0) {

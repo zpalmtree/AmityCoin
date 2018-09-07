@@ -1,4 +1,6 @@
 // Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2018 The AmityCoin Developers
+//
 // 
 // All rights reserved.
 // 

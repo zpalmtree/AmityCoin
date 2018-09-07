@@ -997,7 +997,7 @@ bool simple_wallet::new_wallet(const std::string &wallet_file, const std::string
     std::future<std::error_code> f_initError = m_initResultPromise->get_future();
     // m_wallet->initAndGenerate(password);
     // Create deterministic wallets by default
-    m_wallet->initAndGenerate(password);
+    m_wallet->initAndGenerateDeterministic(password);
     auto initError = f_initError.get();
     m_initResultPromise.reset(nullptr);
     if (initError) {
@@ -1023,6 +1023,14 @@ bool simple_wallet::new_wallet(const std::string &wallet_file, const std::string
     fail_msg_writer() << "failed to generate new wallet: " << e.what();
     return false;
   }
+ 
+  AccountKeys keys;
+  m_wallet->getAccountKeys(keys);
+  // convert rng value to electrum-style word list
+  std::string lang = "English";
+  std::string electrum_words;
+  Crypto::ElectrumWords::bytes_to_words(keys.spendSecretKey, electrum_words, lang);
+  std::string print_electrum = "";
 
   success_msg_writer() <<
     "**********************************************************************\n" <<
@@ -1032,6 +1040,13 @@ bool simple_wallet::new_wallet(const std::string &wallet_file, const std::string
     "current session's state. Otherwise, you will possibly need to synchronize \n" <<
     "your wallet again. Your wallet key is NOT under risk anyway.\n" <<
     "**********************************************************************";
+	
+  std::cout << "\nPLEASE NOTE: the following 25 words can be used to recover access to your wallet. " << 
+    "Please write them down and store them somewhere safe and secure. Please do not store them in your email or " <<
+    "on file storage services outside of your immediate control.\n\n";
+  std::cout << electrum_words << std::endl;
+  success_msg_writer() << "**********************************************************************";
+
   return true;
 }
 //----------------------------------------------------------------------------------------------------

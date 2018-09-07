@@ -130,7 +130,7 @@ struct EllipticCurveScalar {
     crypto_ops::generate_keys(pub, sec);
   }
 
-   inline void generate_deterministic_keys(PublicKey &pub, SecretKey &sec, SecretKey& second) 
+   inline void generate_deterministic_keys(PublicKey &pub, SecretKey &sec, SecretKey& second) {
     crypto_ops::generate_deterministic_keys(pub, sec, second);
   } 
 

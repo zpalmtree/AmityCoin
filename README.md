@@ -129,6 +129,12 @@ https://paper.amitycoin.tk/
 
 *Xandars block explorer and web wallet to come*
 
+**Remote Nodes**
+https://daemon.amitycoin.cf/
+
+**Block Explorer**
+http://blocks.amitycoin.cf/
+
 ***
 
 ### CONTACT

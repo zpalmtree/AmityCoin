@@ -2,6 +2,16 @@
 
 ![alt text](https://github.com/Amity-Core/docs/blob/master/images/100x100.png "Coin Logo")
 
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/AmityCoin-not%2520launched-red.png)
+
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/AmityCoin-passing-blue.png)
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/AmitySite-beta-yellow.png)
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/PaperWallet-active-brightgreen.png)
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/WatterWallet-active-brightgreen.png)
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/GUILinux-passing-brightgreen.png)
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/GUIWindows-fail-red.png)
+![alt text](https://github.com/Amity-Core/docs/blob/master/images/GUIMac-unknown-yellow.png)
+
 ***
 
 | COIN | INFORMATION |
@@ -97,7 +107,7 @@ is the best place to stay active with the forever growing community.
 
 ##### Build AmityCoin
 
-[Build Instructions for AmityCoin](https://github.com/AmityCore/Amitycoin/wiki/Building-Amity). Right now we only have Linux Ubuntu build instructions. Please contribute to the docs with other OS build information. 
+[Build Instructions for AmityCoin](https://github.com/AmityCore/AmityCoin/wiki/Building-AmityCoin). Right now we only have Linux Ubuntu build instructions. Please contribute to the docs with other OS build information. 
 
 ##### Forking AmityCoin
 

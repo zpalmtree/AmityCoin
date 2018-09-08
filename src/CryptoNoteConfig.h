@@ -1,5 +1,5 @@
-// Copyright (c) MMXVIII The Amity Developers
 // Copyright (c) 2011-2016 The Cryptonote developers
+// Copyright (c) 2018 The AmityCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -63,7 +63,7 @@ const char     CRYPTONOTE_BLOCKCHAIN_INDICES_FILENAME[]      = "blockchainindice
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "Amitycoin";
+const char     CRYPTONOTE_NAME[]                             = "AmityCoin";
 const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
